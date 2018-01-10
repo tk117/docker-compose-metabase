@@ -7,4 +7,4 @@ docker-compose.yml for metabase
 # docker-compose up -d
 ```
 
-see http://<ip-addr>:3000
+see http://ip-addr:3000
