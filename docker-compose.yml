@@ -8,6 +8,7 @@ services:
       - db:db
     depends_on:
       - db
+    restart: always
   db:
     image: mariadb:10.2.12
     ports:
@@ -15,4 +16,5 @@ services:
     volumes:
       - ./data/volumes:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=root 
+      - MYSQL_ROOT_PASSWORD=root
+    restart: always
